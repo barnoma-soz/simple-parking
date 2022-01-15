@@ -11,7 +11,7 @@
       {{ $page.props.flash.error }}
     </div>
 
-    <table class="table table-sm table-striped">
+    <table v-if="cars.data.length" class="table table-sm table-striped">
       <thead>
         <tr>
           <th>Марка</th>
@@ -41,6 +41,7 @@
         </tr>
       </tbody>
     </table>
+    <div v-else class="alert alert-warning">Нет ни одной добавленой записи</div>
 
     <!-- Paginator -->
   </div>
