@@ -2,6 +2,12 @@
 
 ## Установка
 
+Перед запуском необходимо установить зависимые пакеты командой:
+
+```
+composer install
+```
+
 Создайте SQLite базу данных
 
 ```
@@ -31,4 +37,16 @@ DB_CONNECTION=sqlite
 
 ```
 php artisan migrate --seed
+```
+
+Установка npm пакетов
+
+```
+yarn && npm run dev
+```
+
+## Запуск
+
+```
+php artisan serve
 ```
